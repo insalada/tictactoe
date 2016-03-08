@@ -125,5 +125,5 @@ You can either use a Rest Client such [Postman](https://www.getpostman.com) or j
 }
 ```
 
-* **Wait for your rival's move**...and son on. Eventually somebody will win....or not! Good Luck
+* **Wait for your rival's move**...and so on. Eventually somebody will win....or not! Good Luck
 

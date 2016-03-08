@@ -27,7 +27,7 @@ public class RoomPoolManager {
 	 * @param uuid
 	 * @return Room
 	 */
-	public Room getRoom(int id) {
+	public synchronized Room getRoom(int id) {
 		return rooms.get(id);
 	}
 
@@ -35,7 +35,7 @@ public class RoomPoolManager {
 	 * Add a room to the system
 	 * @param player
 	 */
-	public void addRoom(Room room) {
+	public synchronized void addRoom(Room room) {
 		rooms.put(room.getId(), room);
 		LOGGER.info("Added to the system room: " + room.getId());
 	}
