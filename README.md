@@ -1,4 +1,4 @@
-#TicTacToe Restful WebServer
+#Restful TicTacToe Game Server 
 
 ##What is it?
 A java Rest Controller for playing TicTacToe with multiple users support
