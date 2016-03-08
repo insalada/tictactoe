@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>/Users/insalada/Development/projects/tictactoe/.README.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	background: transparent;
+	color: #4183c4;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	outline: 0 none;
+	text-decoration: underline;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0 none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+
+pre {
+	overflow: auto;
+	font: 12px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.markdown-body {
+	padding: 30px;
+	font-size: 16px;
+	line-height: 1.6;
+	word-wrap: break-word;
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body .absent {
+	color: #c00;
+}
+
+.markdown-body .anchor {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	padding-right: 6px;
+	padding-left: 30px;
+	margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	display: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	padding-left: 8px;
+	margin-left: -30px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	display: inline-block;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+	font-size: inherit;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2.25em;
+	line-height: 1.2;
+	border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.75em;
+	line-height: 1.225;
+	border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+	font-size: 1.5em;
+	line-height: 1.43;
+}
+
+.markdown-body h4 {
+	font-size: 1.25em;
+}
+
+.markdown-body h5 {
+	font-size: 1em;
+}
+
+.markdown-body h6 {
+	font-size: 1em;
+	color: #777;
+}
+
+.markdown-body p,.markdown-body blockquote,
+.markdown-body ul,.markdown-body ol,
+.markdown-body dl,.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 4px;
+	padding: 0;
+	margin: 16px 0;
+	background-color: #e7e7e7;
+	border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+	padding: 0 15px;
+	color: #777;
+	border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+	word-break: normal;
+	word-break: keep-all;
+}
+
+.markdown-body table th {
+	font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.markdown-body span.frame {
+	display: block;
+	overflow: hidden;
+}
+
+.markdown-body span.frame>span {
+	display: block;
+	float: left;
+	width: auto;
+	padding: 7px;
+	margin: 13px 0 0;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+
+.markdown-body span.frame span img {
+	display: block;
+	float: left;
+}
+
+.markdown-body span.frame span span {
+	display: block;
+	padding: 5px 0 0;
+	clear: both;
+	color: #333;
+}
+
+.markdown-body span.align-center {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.markdown-body span.align-center>span {
+	display: block;
+	margin: 13px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.markdown-body span.align-center span img {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.markdown-body span.align-right {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.markdown-body span.align-right>span {
+	display: block;
+	margin: 13px 0 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+.markdown-body span.align-right span img {
+	margin: 0;
+	text-align: right;
+}
+
+.markdown-body span.float-left {
+	display: block;
+	float: left;
+	margin-right: 13px;
+	overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+	margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+	display: block;
+	float: right;
+	margin-left: 13px;
+	overflow: hidden;
+}
+
+.markdown-body span.float-right>span {
+	display: block;
+	margin: 13px auto 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+.markdown-body code,.markdown-body tt {
+	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(0,0,0,0.04);
+	border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after,
+.markdown-body tt:before,
+.markdown-body tt:after {
+	letter-spacing: -0.2em;
+	content: "\00a0";
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+	display: none;
+}
+
+.markdown-body del code {
+	text-decoration: inherit;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+	display: inline;
+	max-width: initial;
+	padding: 0;
+	margin: 0;
+	overflow: initial;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after,
+.markdown-body pre tt:before,
+.markdown-body pre tt:after {
+	content: normal;
+}
+
+.highlight .pl-coc,
+.highlight .pl-entl,
+.highlight .pl-entm,
+.highlight .pl-eoa,
+.highlight .pl-mai .pl-sf,
+.highlight .pl-mm,
+.highlight .pl-pdv,
+.highlight .pl-sc,
+.highlight .pl-som,
+.highlight .pl-sr,
+.highlight .pl-v,
+.highlight .pl-vpf {
+	color: #0086b3;
+}
+.highlight .pl-eoac,
+.highlight .pl-mdht,
+.highlight .pl-mi1,
+.highlight .pl-mri,
+.highlight .pl-va,
+.highlight .pl-vpu {
+	color: #008080;
+}
+.highlight .pl-c,
+.highlight .pl-pdc {
+	color: #b4b7b4;
+	font-style: italic;
+}
+.highlight .pl-k,
+.highlight .pl-ko,
+.highlight .pl-kolp,
+.highlight .pl-mc,
+.highlight .pl-mr,
+.highlight .pl-ms,
+.highlight .pl-s,
+.highlight .pl-sok,
+.highlight .pl-st {
+	color: #6e5494;
+}
+.highlight .pl-ef,
+.highlight .pl-enf,
+.highlight .pl-enm,
+.highlight .pl-entc,
+.highlight .pl-eoi,
+.highlight .pl-sf,
+.highlight .pl-smc {
+	color: #d12089;
+}
+.highlight .pl-ens,
+.highlight .pl-eoai,
+.highlight .pl-kos,
+.highlight .pl-mh .pl-pdh,
+.highlight .pl-mp,
+.highlight .pl-pde,
+.highlight .pl-stp {
+	color: #458;
+}
+.highlight .pl-enti {
+	color: #d12089;
+	font-weight: bold;
+}
+.highlight .pl-cce,
+.highlight .pl-enc,
+.highlight .pl-kou,
+.highlight .pl-mq {
+	color: #f93;
+}
+.highlight .pl-mp1 .pl-sf {
+	color: #458;
+	font-weight: bold;
+}
+.highlight .pl-cos,
+.highlight .pl-ent,
+.highlight .pl-md,
+.highlight .pl-mdhf,
+.highlight .pl-ml,
+.highlight .pl-pdc1,
+.highlight .pl-pds,
+.highlight .pl-s1,
+.highlight .pl-scp,
+.highlight .pl-sol {
+	color: #df5000;
+}
+.highlight .pl-c1,
+.highlight .pl-cn,
+.highlight .pl-pse,
+.highlight .pl-pse .pl-s2,
+.highlight .pl-vi {
+	color: #a31515;
+}
+.highlight .pl-mb,
+.highlight .pl-pdb {
+	color: #df5000;
+	font-weight: bold;
+}
+.highlight .pl-mi,
+.highlight .pl-pdi {
+	color: #6e5494;
+	font-style: italic;
+}
+.highlight .pl-ms1 {
+	background-color: #f5f5f5;
+}
+.highlight .pl-mdh,
+.highlight .pl-mdi {
+	font-weight: bold;
+}
+.highlight .pl-mdr {
+	color: #0086b3;
+	font-weight: bold;
+}
+.highlight .pl-s2 {
+	color: #333;
+}
+.highlight .pl-ii {
+	background-color: #df5000;
+	color: #fff;
+}
+.highlight .pl-ib {
+	background-color: #f93;
+}
+.highlight .pl-id {
+	background-color: #a31515;
+	color: #fff;
+}
+.highlight .pl-iu {
+	background-color: #b4b7b4;
+}
+.highlight .pl-mo {
+	color: #969896;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<h1> <a id="user-content-tictactoe-restful-webserver" class="anchor" href="#tictactoe-restful-webserver" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TicTacToe Restful WebServer</h1> 
+<h2> <a id="user-content-what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is it?</h2> 
+<p>A java Rest Controller for playing TicTacToe with multiple users support</p> 
+<h2> <a id="user-content-technologies" class="anchor" href="#technologies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technologies</h2> 
+<ul> 
+ <li>Java 8</li> 
+ <li>Spring 4</li> 
+ <li>JUnit (Testing rest controllers)</li> 
+ <li>Mockito</li> 
+ <li>Maven</li> 
+</ul> 
+<h2> <a id="user-content-set-up" class="anchor" href="#set-up" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Set up</h2> 
+<ol> 
+ <li>Import the project as Maven Project into your favourite IDE (Eclise, IntelliJ...)</li> 
+ <li>Set the build path to JavaSE-1.8 and the compiler compliance to Java 1.8</li> 
+ <li>Run maven to create your repository or just create your goals:</li> 
+</ol> 
+<blockquote> 
+ <p><code>mvn clean install</code></p> 
+</blockquote> 
+<ol> 
+ <li>Run tomcat:</li> 
+</ol> 
+<blockquote> 
+ <p><code>tomcat7:run-war</code></p> 
+</blockquote> 
+<h2> <a id="user-content-testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2> 
+<p>You have 2 options:</p> 
+<ul> 
+ <li>Run maven tests through the console:</li> 
+</ul> 
+<blockquote> 
+ <p><code>mvn test</code></p> 
+</blockquote> 
+<ul> 
+ <li>Run as JUnit Tests. (E.g: in eclipse, right click over project folder -&gt; Run As -&gt; JUnit Test)</li> 
+</ul> 
+<h2> <a id="user-content-requests" class="anchor" href="#requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requests</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>url</th> 
+   <th>method</th> 
+   <th>consumes</th> 
+   <th>produces</th> 
+   <th>description</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>/new</td> 
+   <td>POST</td> 
+   <td>JSON: name</td> 
+   <td>JSON</td> 
+   <td>Creates a new player</td> 
+  </tr> 
+  <tr> 
+   <td>/join</td> 
+   <td>POST</td> 
+   <td>JSON: uuid</td> 
+   <td>JSON</td> 
+   <td>Joins a room</td> 
+  </tr> 
+  <tr> 
+   <td>/play</td> 
+   <td>POST</td> 
+   <td>JSON: move</td> 
+   <td>JSON</td> 
+   <td>Makes a move</td> 
+  </tr> 
+  <tr> 
+   <td>/whose</td> 
+   <td>GET</td> 
+   <td>param: uuid</td> 
+   <td>JSON</td> 
+   <td>Whose turn is it?</td> 
+  </tr> 
+  <tr> 
+   <td>/status</td> 
+   <td>GET</td> 
+   <td>param: roomId</td> 
+   <td>JSON</td> 
+   <td>Status of the game's room</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2> <a id="user-content-how-to-play" class="anchor" href="#how-to-play" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Play</h2> 
+<p>You can either use a Rest Client such <a href="https://www.getpostman.com">Postman</a> or just the command <a href="https://curl.haxx.se">cURL</a></p> 
+<ul> 
+ <li>Step 1: Create a <strong>new user</strong>:</li> 
+</ul> 
+<blockquote> 
+ <p>Provide a JSON with the following format:</p> 
+ <div class="highlight highlight-source-json">
+  <pre>{<span class="pl-s"><span class="pl-pds">&quot;</span>name<span class="pl-pds">&quot;</span></span>:<span class="pl-s"><span class="pl-pds">&quot;</span>ivan<span class="pl-pds">&quot;</span></span>}</pre>
+ </div> 
+ <p>Example:</p> 
+ <p><code>curl --data '{&quot;name&quot;:&quot;ivan&quot;}' -v -X POST -H &quot;Content-Type: application/json&quot; &quot;http://localhost:8080/tictactoe/new&quot;</code></p> 
+ <p>Take into account escape quotes if you are running curl in a Windows machine. E.g:</p> 
+ <p><code>curl --data &quot;{\&quot;name\&quot;:\&quot;ivan\&quot;}&quot; -v -X POST -H &quot;Content-Type: application/json&quot; &quot;http://localhost:8080/tictactoe/new&quot;</code></p> 
+ <p>You will receive a response like this:</p> 
+ <div class="highlight highlight-source-json">
+  <pre>{
+  <span class="pl-s"><span class="pl-pds">&quot;</span>success<span class="pl-pds">&quot;</span></span>: <span class="pl-c1">true</span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>message<span class="pl-pds">&quot;</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span>User created<span class="pl-pds">&quot;</span></span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>uuid<span class="pl-pds">&quot;</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span>add13b40-c856-45be-8270-a11239d2053e<span class="pl-pds">&quot;</span></span>
+}</pre>
+ </div> 
+</blockquote> 
+<ul> 
+ <li>Step 2: <strong>Join a room</strong>:</li> 
+</ul> 
+<blockquote> 
+ <p>Provide a JSON with the previously received uuid:</p> 
+ <div class="highlight highlight-source-json">
+  <pre>{<span class="pl-s"><span class="pl-pds">&quot;</span>uuid<span class="pl-pds">&quot;</span></span>:<span class="pl-s"><span class="pl-pds">&quot;</span>add13b40-c856-45be-8270-a11239d2053e<span class="pl-pds">&quot;</span></span>}</pre>
+ </div> 
+ <p>Response:</p> 
+ <div class="highlight highlight-source-json">
+  <pre>{
+  <span class="pl-s"><span class="pl-pds">&quot;</span>success<span class="pl-pds">&quot;</span></span>: <span class="pl-c1">true</span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>message<span class="pl-pds">&quot;</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Joined to room 1<span class="pl-pds">&quot;</span></span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>uuid<span class="pl-pds">&quot;</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span>add13b40-c856-45be-8270-a11239d2053e<span class="pl-pds">&quot;</span></span>
+}</pre>
+ </div> 
+</blockquote> 
+<ul> 
+ <li><p>Step 3: You will need to <strong>wait for another player</strong> to join your room. So just create another user and join your room</p></li> 
+ <li><p>Step 4: <strong>Start playing!</strong> just make your move:</p></li> 
+</ul> 
+<blockquote> 
+ <div class="highlight highlight-source-json">
+  <pre>{
+    <span class="pl-s"><span class="pl-pds">&quot;</span>uuid<span class="pl-pds">&quot;</span></span>:<span class="pl-s"><span class="pl-pds">&quot;</span>79b8c7f4-0066-4383-9c71-4b6de76bf5e7<span class="pl-pds">&quot;</span></span>, 
+    <span class="pl-s"><span class="pl-pds">&quot;</span>position<span class="pl-pds">&quot;</span></span> : {
+        <span class="pl-s"><span class="pl-pds">&quot;</span>row<span class="pl-pds">&quot;</span></span>: <span class="pl-c1">0</span>, 
+        <span class="pl-s"><span class="pl-pds">&quot;</span>column<span class="pl-pds">&quot;</span></span>:<span class="pl-c1">2</span>
+    }
+}</pre>
+ </div> 
+ <p>Response:</p> 
+ <div class="highlight highlight-source-json">
+  <pre>{
+  <span class="pl-s"><span class="pl-pds">&quot;</span>success<span class="pl-pds">&quot;</span></span>: <span class="pl-c1">true</span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>message<span class="pl-pds">&quot;</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Move OK<span class="pl-pds">&quot;</span></span>
+}</pre>
+ </div> 
+</blockquote> 
+<ul> 
+ <li>You will need to ask the server <strong>whose turn is it</strong>:</li> 
+</ul> 
+<blockquote> 
+ <p><code>curl --data '{&quot;uuid&quot;:&quot;79b8c7f4-0066-4383-9c71-4b6de76bf5e7&quot;}' -v -X GET -H &quot;Content-Type: application/json&quot; http://localhost:8080/tictactoe/whose</code></p> 
+ <div class="highlight highlight-source-json">
+  <pre>{
+  <span class="pl-s"><span class="pl-pds">&quot;</span>success<span class="pl-pds">&quot;</span></span>: <span class="pl-c1">true</span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>message<span class="pl-pds">&quot;</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span>It is your turn. Moves accepted (0-2)(0-2)<span class="pl-pds">&quot;</span></span>,
+  <span class="pl-s"><span class="pl-pds">&quot;</span>uuid<span class="pl-pds">&quot;</span></span>: <span class="pl-c1">null</span>
+}</pre>
+ </div> 
+</blockquote> 
+<ul> 
+ <li> <strong>Wait for your rival's move</strong>...and son on. Eventually somebody will win....or not! Good Luck</li> 
+</ul>
+</body>
+</html>
